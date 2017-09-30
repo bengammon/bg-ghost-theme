@@ -1,5 +1,5 @@
 # Keep these files out of the repo
-/node_modules/
+node_modules/
 
 # Hidden files
-*.sass-cache*
+.sass-cache/
