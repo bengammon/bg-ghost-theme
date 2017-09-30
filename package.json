@@ -1,0 +1,23 @@
+{
+    "name": "ben-gammon",
+    "description": "The default personal blogging theme for bengammon.co.uk",
+    "version": "1.0.0",
+    "engines": {
+        "ghost": ">=1.2.0"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Ben Gammon",
+        "email": "ben@moov2.com",
+        "url": "http://bengammon.co.uk"
+    },
+    "devDependencies": {
+        "grunt": "^0.4.5",
+        "grunt-contrib-cssmin": "^2.0.0",
+        "grunt-contrib-sass": "^1.0.0",
+        "grunt-contrib-watch": "^1.0.0"
+    },
+    "config": {
+        "posts_per_page": 9
+    }
+}
