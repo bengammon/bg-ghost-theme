@@ -1,0 +1,23 @@
+/*
+ * ------------------------------------------------------------------------
+ *   $HEADING
+ * ------------------------------------------------------------------------
+ */
+ 
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0;
+    
+    font-family: $font-family-heading;
+    font-weight: 700;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    margin-top: 0;
+    
+    color: $color-grey-2;
+    font-family: $font-family-heading;
+    font-size: $font-size-heading-one;
+    font-weight: 700;
+    line-height: 1.2;
+}

@@ -1,0 +1,16 @@
+/*
+ * ------------------------------------------------------------------------
+ *   $GRID
+ * ------------------------------------------------------------------------
+ */
+ 
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: $spacing-large;
+    grid-row-gap: $spacing-large;
+
+}
+
+    .grid__item {
+    }

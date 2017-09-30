@@ -1,0 +1,17 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $TEXT
+ * -----------------------------------------------------------------------------
+ */
+ 
+.strapline-one { margin-bottom: $spacing-medium; }
+
+.strapline-two {
+    margin-bottom: 0;
+    
+    color: $color-grey-5;
+    font-family: $font-family-subheading;
+    font-size: $font-size-heading-three;
+    font-style: italic;
+    font-weight: 400;
+}

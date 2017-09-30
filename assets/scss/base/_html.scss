@@ -1,0 +1,32 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $HTML
+ * -----------------------------------------------------------------------------
+ */
+
+/**
+ * 1. Makes REM units easier to work with because 1rem = 10px.
+ * 2. Allow for full screen styles without using vh
+ */
+ 
+html {
+    font-family: $font-family-default;
+    font-size: 62.5%; /* 1. */
+    height: 100%; /* 2. */
+    width: 100%;
+
+    box-sizing: border-box;
+}
+
+/**
+ * More sensible default box-sizing:
+ * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+ */
+  
+* {
+    &,
+    &:before,
+    &:after {
+        box-sizing: inherit;
+    }
+}

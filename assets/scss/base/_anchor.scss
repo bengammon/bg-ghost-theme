@@ -1,0 +1,18 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $ANCHOR
+ * -----------------------------------------------------------------------------
+ */
+ 
+a { 
+    border-bottom: 1px dashed $color-lime-3;
+    color: $color-grey-2;
+    text-decoration: none;
+
+    transition: all .2s ease;
+
+    &:hover {
+        color: $color-grey-1;
+        border-bottom: 1px solid $color-lime-3;
+    }
+}
