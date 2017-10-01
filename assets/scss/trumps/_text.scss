@@ -4,14 +4,13 @@
  * -----------------------------------------------------------------------------
  */
  
-.strapline-one { margin-bottom: $spacing-medium; }
-
-.strapline-two {
-    margin-bottom: 0;
+.text--h1 { 
+    margin-bottom: 1rem;
+    margin-top: 0;
     
-    color: $color-grey-5;
-    font-family: $font-family-subheading;
-    font-size: $font-size-heading-three;
-    font-style: italic;
-    font-weight: 400;
+    color: $color-grey-2;
+    font-family: $font-family-heading;
+    font-size: $font-size-heading-one;
+    font-weight: 700;
+    line-height: 1.2;
 }
