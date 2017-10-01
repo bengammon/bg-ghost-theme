@@ -12,6 +12,7 @@
 
 @import "base/anchor";
 @import "base/article";
+@import "base/aside";
 @import "base/body";
 @import "base/heading";
 @import "base/html";
@@ -21,6 +22,8 @@
 @import "components/section";
 @import "components/summary";
 
+@import "layout/footer";
 @import "layout/header";
+@import "layout/site";
 
 @import "trumps/text";
