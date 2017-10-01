@@ -4,7 +4,8 @@
  * -----------------------------------------------------------------------------
  */
  
-a { 
+a,
+.link { 
     border-bottom: 1px dashed $color-lime-3;
     color: $color-grey-2;
     text-decoration: none;
@@ -14,5 +15,13 @@ a {
     &:hover {
         color: $color-grey-1;
         border-bottom: 1px solid $color-lime-3;
+    }
+}
+
+.link--plain {
+    border: 0;
+
+    &:hover {
+        border: 0;
     }
 }

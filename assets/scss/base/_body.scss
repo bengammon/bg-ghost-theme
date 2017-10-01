@@ -3,13 +3,31 @@
  *   $BODY
  * ------------------------------------------------------------------------
  */
- 
+
+/**
+ * 1. Sets the default font size back to 16px (unless $font-size-default has
+ *    changed value). This is the only time `em` should be used to define the
+ *    font-size. This has to be `em` because of a bug in Chrome described in
+ *    a link below.
+ *    https://code.google.com/p/chromium/issues/detail?id=320754
+ */
+
+ /**
+  * 2. Sets the body to display at a min height fo the full viewport height,
+  *    used in assistance with the footer margin-top: auto; rule to create a
+  *    sticky footer if not enough content is available on the page.
+  *    https://teamtreehouse.com/library/css-flexbox-layout/building-a-layout-with-flexbox/creating-a-sticky-footer-with-flexbox#video-tabs
+  */
+
 body {
+    display: flex; /* 2. */
+    flex-direction: column;
     margin: 0;
+    min-height: 100vh;
     
     background: $color-grey-dark;
     color: $color-grey-4;
     font-family: $font-family-default;
-    font-size: $font-size-default-em;
+    font-size: $font-size-default-em; /* 1. */
     text-rendering: optimizeLegibility;
 }

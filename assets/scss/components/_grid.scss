@@ -6,11 +6,18 @@
  
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: $spacing-large;
-    grid-row-gap: $spacing-large;
-
+    grid-column-gap: $spacing-gigantic;
+    grid-row-gap: $spacing-gigantic;
 }
 
     .grid__item {
+        display: flex;
     }
+
+.grid--double {
+    grid-template-columns: 1fr 1fr;
+}
+    
+.grid--triple {
+    grid-template-columns: 1fr 1fr 1fr;
+}

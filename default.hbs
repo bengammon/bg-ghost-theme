@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     {{!-- Styles'n'Scripts --}}
-    <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/screen.min.css"}}" />
 
     {{!-- This tag outputes SEO meta+structured data and other important settings --}}
     {{ghost_head}}
@@ -26,16 +26,8 @@
         {{{body}}}
 
         {{!-- The footer at the very bottom of the screen --}}
-        <footer class="site-footer outer">
-            <div class="site-footer-content inner">
-                <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
-                <nav class="site-footer-nav">
-                    <a href="{{@blog.url}}">Latest Posts</a>
-                    {{#if @blog.facebook}}<a href="{{facebook_url @blog.facebook}}" target="_blank">Facebook</a>{{/if}}
-                    {{#if @blog.twitter}}<a href="{{twitter_url @blog.twitter}}" target="_blank">Twitter</a>{{/if}}
-                    <a href="https://ghost.org" target="_blank">Ghost</a>
-                </nav>
-            </div>
+        <footer>
+            <p>{{@blog.title}} &copy; {{date format="YYYY"}}. Built with <a class="link link--plain" href="https://ghost.org" target="_blank">Ghost</a>.</p>
         </footer>
 
     </div>

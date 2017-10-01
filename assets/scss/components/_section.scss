@@ -13,6 +13,18 @@ section,
 }
 
 .section--intro {
-    padding-bottom: $spacing-huge * 3;
-    padding-top: $spacing-huge * 3;
+    padding-bottom: $spacing-gigantic * 4;
+    padding-top: $spacing-gigantic * 4;
+
+    h1 { margin-bottom: $spacing-medium; }
+    
+    h2 {
+        margin-bottom: 0;
+        
+        color: $color-grey-5;
+        font-family: $font-family-subheading;
+        font-size: $font-size-heading-two;
+        font-style: italic;
+        font-weight: 400;
+    }
 }

@@ -5,7 +5,7 @@
  */
  
 .summary {
-    padding: $spacing-medium;
+    padding: $spacing-large;
     
     border: 1px solid $color-grey-7;
     
@@ -14,21 +14,37 @@
     }
     
     &__title {
+        margin-bottom: $spacing-tiny * 3;
+        
         color: $color-grey-4;
-        margin-bottom: $spacing-small;
+        font-size: $font-size-heading-two;
+
+        a { 
+            border: 0;
+            color: $color-grey-4;
+
+            &:hover {
+                color: $color-grey-2;
+            }
+        }
     }
     
     &__meta {
+        margin-bottom: $spacing-medium;
+
         color: $color-grey-5;
         font-family: $font-family-subheading;
         font-size: $font-size-small;
         font-style: italic;
+
+        a {
+            color: $color-grey-5;
+        }
     }
     
     &__excerpt {
         margin-bottom: 0;
         
         font-size: $font-size-default;
-        font-weight: 300;
     }
 }
