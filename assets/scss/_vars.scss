@@ -40,11 +40,11 @@ $font-family-heading: 'Montserrat', sans-serif;
 $font-family-subheading: 'Lora', Georgia, serif;
 
 $font-size-default-em: 1.6em;
-$font-size-default: 1.2rem;
-$font-size-small: 1rem;
+$font-size-default: 1.9rem;
+$font-size-small: 1.6rem;
 
-$font-size-heading-one: 5rem;
-$font-size-heading-two: 3rem;
+$font-size-heading-one: 8rem;
+$font-size-heading-two: 3.2rem;
 $font-size-heading-three: 2rem;
 $font-size-heading-four: $font-size-default;
 
@@ -55,6 +55,8 @@ $spacing-small: 1rem;
 $spacing-medium: 2rem;
 $spacing-large: 3rem;
 $spacing-huge: 4rem;
+$spacing-gigantic: 5rem;
 
-$width-container: 100rem;
-$width-content: 45rem;
+$width-container: 160rem;
+$width-container-indent: 30rem;
+$width-content: 70rem;
