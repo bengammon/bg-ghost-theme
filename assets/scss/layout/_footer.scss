@@ -1,0 +1,15 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $FOOTER
+ * -----------------------------------------------------------------------------
+ */
+
+footer,
+.footer {
+    padding-bottom: $spacing-medium;
+    padding-top: $spacing-gigantic * 2;
+
+    color: $color-grey-5;
+    text-align: center;
+    font-size: $font-size-small;
+}
