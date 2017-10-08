@@ -1,0 +1,43 @@
+/*
+ * ------------------------------------------------------------------------
+ *   $BLOCKQUOTE
+ * ------------------------------------------------------------------------
+ */
+
+blockquote {
+    
+    .article__body & {
+        margin-bottom: $spacing-large;
+        margin-left: $article-margin;
+        margin-right: $article-margin;
+        margin-top: $spacing-large;
+        padding-bottom: $spacing-tiny * 3;
+        padding-left: $spacing-small;
+        padding-right: $spacing-small;
+        padding-top: $spacing-tiny * 3;
+
+        background-color: transparent;
+        border-radius: $border-radius;
+        
+        border-color: $color-grey-8;
+        border-width: 1px;
+        border-style: solid;
+
+        border-left: 4px solid $color-lime-3;
+
+        p {
+            margin-bottom: 0;
+            padding: 0;
+
+            color: $color-grey-5;
+            font-family: $font-family-subheading;
+            font-size: $font-size-default;
+            font-style: italic;
+            line-height: $line-height-blockquote;
+
+            @include bp-min-width($bp-desktop) {
+                font-size: $font-size-heading-three;
+            }
+        }
+    }
+}

@@ -11,6 +11,13 @@
     color: $color-grey-2;
     font-family: $font-family-heading;
     font-size: $font-size-heading-one;
-    font-weight: 700;
+    font-weight: $font-weight-bold;
     line-height: 1.2;
+}
+
+.text--sub-title {
+    color: $color-grey-6;
+    letter-spacing: $letter-spacing-large;
+    font-weight: $font-weight-normal;
+    text-transform: uppercase;
 }

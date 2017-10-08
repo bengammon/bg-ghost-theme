@@ -1,38 +1,39 @@
 /*
  * ------------------------------------------------------------------------
- *   $PARAGRAPH
+ *   $LIST-BASE
  * ------------------------------------------------------------------------
  */
- 
-p {
+
+ol,
+ul {
     margin-bottom: $spacing-medium;
     margin-left: $article-margin;
     margin-right: $article-margin;
-    margin-top: 0;
-
+    padding-left: $spacing-large;
+    
     font-size: $font-size-small;
-    font-weight: 300;
     line-height: $line-height-paragraph-small;
 
-    & + h2,
-    & + h3,
-    & + h4 { 
-        padding-top: $spacing-small;
-
-        @include bp-min-width($bp-desktop) {
-            padding-top: $spacing-medium * 2;
-        }
-    }
-
     @include bp-min-width($bp-desktop) {
-        margin-left: $article-margin-large;
-        margin-right: $article-margin-large;
+        margin-left: 0;
+        padding-left: $spacing-gigantic * 2;
 
         font-size: $font-size-default;
         line-height: $line-height-paragraph;
     }
 
-    footer & {
-        margin-bottom: 0;
+    & + h2, 
+    & + h3,
+    & + h4 { 
+        padding-top: $spacing-medium * 2;
+    }
+
+    .article__body & {
+        .footnote-item p,
+        p {
+            margin-bottom: 0;
+            padding-left: $spacing-small;
+            padding-right: 0;
+        }
     }
 }

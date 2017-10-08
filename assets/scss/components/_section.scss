@@ -16,6 +16,8 @@ section,
     padding-bottom: $spacing-gigantic * 4;
     padding-top: $spacing-gigantic * 4;
 
+    text-align: center;
+
     h1 { margin-bottom: $spacing-medium; }
     
     h2 {
@@ -23,7 +25,6 @@ section,
         
         color: $color-grey-5;
         font-family: $font-family-subheading;
-        font-size: $font-size-heading-two;
         font-style: italic;
         font-weight: 400;
     }

@@ -6,6 +6,8 @@
 
 $border-radius: 0.2rem;
 
+$bp-desktop: 1024px;
+
 $color-black: #000;
 $color-grey-dark: #212121;
 
@@ -42,13 +44,29 @@ $font-family-subheading: 'Lora', Georgia, serif;
 $font-size-default-em: 1.6em;
 $font-size-default: 1.9rem;
 $font-size-small: 1.6rem;
+$font-size-medium: 2.2rem;
+$font-size-large: 3.2rem;
+$font-size-huge: 4.4rem;
+$font-size-gigantic: 8rem;
 
-$font-size-heading-one: 8rem;
-$font-size-heading-two: 3.2rem;
-$font-size-heading-three: 2rem;
+$font-size-heading-one: $font-size-gigantic;
+$font-size-heading-one-mobile: $font-size-large;
+$font-size-heading-two: $font-size-large;
+$font-size-heading-two-mobile: $font-size-medium;
+$font-size-heading-three: $font-size-medium;
+$font-size-heading-three-mobile: $font-size-default;
 $font-size-heading-four: $font-size-default;
+$font-size-heading-four-mobile: $font-size-small;
 
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+$letter-spacing-large: .1rem;
+
+$line-height-blockquote: 1.4;
 $line-height-paragraph: 1.6;
+$line-height-paragraph-small: 1.4;
 
 $spacing-tiny: .5rem;
 $spacing-small: 1rem;
@@ -56,6 +74,9 @@ $spacing-medium: 2rem;
 $spacing-large: 3rem;
 $spacing-huge: 4rem;
 $spacing-gigantic: 5rem;
+
+$article-margin: $spacing-small;
+$article-margin-large: $spacing-large;
 
 $width-container: 160rem;
 $width-container-indent: 30rem;

@@ -12,17 +12,23 @@ header,
     margin-right: auto;
     max-width: $width-container;
     padding-top: $spacing-medium;
+
+    font-size: $font-size-small;
+
+    @include bp-min-width($bp-desktop) {
+        font-size: $font-size-default;
+    }
         
     &__logo {
         height: 36px;
+        margin-left: $article-margin;
         width: 40px;
     }
     
     &__nav {
         display: flex;
         margin-left: auto;
-
-        a { font-size: $font-size-default; }
+        margin-right: $article-margin;
 
         ul {
             display: flex;

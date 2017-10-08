@@ -6,8 +6,12 @@
  
 .grid {
     display: grid;
-    grid-column-gap: $spacing-gigantic;
-    grid-row-gap: $spacing-gigantic;
+
+    @include bp-min-width($bp-desktop) {
+        grid-column-gap: $spacing-gigantic;
+        grid-row-gap: $spacing-gigantic;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
     .grid__item {
@@ -15,9 +19,17 @@
     }
 
 .grid--double {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+
+    @include bp-min-width($bp-desktop) {
+        grid-template-columns: 1fr 1fr;
+    }
 }
     
 .grid--triple {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+
+    @include bp-min-width($bp-desktop) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
