@@ -13,10 +13,20 @@ section,
 }
 
 .section--intro {
-    padding-bottom: $spacing-gigantic * 4;
-    padding-top: $spacing-gigantic * 4;
+    padding-bottom: $spacing-gigantic * 2;
+    padding-top: $spacing-gigantic * 2;
 
-    text-align: center;
+    @include bp-min-width($bp-tablet) {
+        padding-bottom: $spacing-gigantic * 3;
+        padding-top: $spacing-gigantic * 3;
+
+        text-align: center;
+    }
+
+    @include bp-min-width($bp-desktop) {
+        padding-bottom: $spacing-gigantic * 4;
+        padding-top: $spacing-gigantic * 4;
+    }
 
     h1 { margin-bottom: $spacing-medium; }
     

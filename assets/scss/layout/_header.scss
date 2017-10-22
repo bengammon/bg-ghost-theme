@@ -20,9 +20,17 @@ header,
     }
         
     &__logo {
-        height: 36px;
         margin-left: $article-margin;
-        width: 40px;
+
+        .site-logo { 
+            height: 31px;
+            width: 40px;
+
+            background: url('../images/bg-logo.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            fill: red;
+        }
     }
     
     &__nav {

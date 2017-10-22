@@ -15,10 +15,14 @@ article {
         margin-bottom: $spacing-medium;
         padding-top: $spacing-gigantic * 2;
 
-        @include bp-min-width($bp-desktop) {
-            padding-top: $spacing-gigantic * 4;
+        @include bp-min-width($bp-tablet) {
+            padding-top: $spacing-gigantic * 3;
 
             text-align: center;
+        }
+
+        @include bp-min-width($bp-desktop) {
+            padding-top: $spacing-gigantic * 4;
         }
     }
 
@@ -30,10 +34,14 @@ article {
         font-size: $font-size-heading-four;
         font-style: italic;
 
-        @include bp-min-width($bp-desktop) {
+        @include bp-min-width($bp-tablet) {
             margin-bottom: $spacing-gigantic * 3;
 
             text-align: center;
+        }
+
+        @include bp-min-width($bp-desktop) {
+            margin-bottom: $spacing-gigantic * 4;
         }
 
         a {

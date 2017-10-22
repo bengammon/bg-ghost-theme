@@ -10,8 +10,21 @@
     
     border-top: 1px solid $color-grey-7;
 
+    @include bp-min-width($bp-tablet) {
+        padding: $spacing-large $spacing-medium;
+
+        border-right: 1px solid $color-grey-7;
+
+        &:nth-child(even) {
+            border-right: 0;
+        }
+    }
+
     @include bp-min-width($bp-desktop) {
-        padding: $spacing-large;
+        padding-bottom: $spacing-large;
+        padding-left: $spacing-tiny;
+        padding-right: $spacing-tiny;
+        padding-top: $spacing-large;
 
         border: 1px solid $color-grey-7;
     }

@@ -8,9 +8,14 @@
     display: grid;
 
     @include bp-min-width($bp-desktop) {
-        grid-column-gap: $spacing-gigantic;
-        grid-row-gap: $spacing-gigantic;
+        grid-column-gap: $spacing-large;
+        grid-row-gap: $spacing-large;
         grid-template-columns: 1fr 1fr;
+    }
+
+    @include bp-min-width($bp-desktop-large) {
+        grid-column-gap: $spacing-huge;
+        grid-row-gap: $spacing-huge;
     }
 }
 
@@ -28,6 +33,10 @@
     
 .grid--triple {
     grid-template-columns: 1fr;
+
+    @include bp-min-width($bp-tablet) {
+        grid-template-columns: 1fr 1fr;
+    }
 
     @include bp-min-width($bp-desktop) {
         grid-template-columns: 1fr 1fr 1fr;

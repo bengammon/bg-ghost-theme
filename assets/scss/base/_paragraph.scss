@@ -32,6 +32,10 @@ p {
         line-height: $line-height-paragraph;
     }
 
+    &.summary__excerpt {
+        line-height: $line-height-paragraph-small;
+    }
+
     footer & {
         margin-bottom: 0;
     }

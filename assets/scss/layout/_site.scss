@@ -10,4 +10,9 @@
 
 .site-wrapper {
     font-size: $font-size-default; /* 1. */
+
+    @include bp-min-width($bp-desktop) {
+        padding-left: $spacing-medium;
+        padding-right: $spacing-medium;
+    }
 }
