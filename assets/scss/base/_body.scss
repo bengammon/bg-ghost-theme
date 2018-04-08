@@ -13,7 +13,7 @@
  */
 
  /**
-  * 2. Sets the body to display at a min height fo the full viewport height,
+  * 2. Sets the body to display at a min height of the full viewport height,
   *    used in assistance with the footer margin-top: auto; rule to create a
   *    sticky footer if not enough content is available on the page.
   *    https://teamtreehouse.com/library/css-flexbox-layout/building-a-layout-with-flexbox/creating-a-sticky-footer-with-flexbox#video-tabs
@@ -25,9 +25,13 @@ body {
     margin: 0;
     min-height: 100vh;
     
-    background: $color-grey-9;
+    background: $color-white;
     color: $color-grey-4;
     font-family: $font-family-default;
     font-size: $font-size-default-em; /* 1. */
     text-rendering: optimizeLegibility;
+
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: antialiased;
+	font-smoothing: antialiased;
 }

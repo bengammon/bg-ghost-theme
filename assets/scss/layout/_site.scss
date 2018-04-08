@@ -5,14 +5,19 @@
  */
 
 /**
- * 1. See _body.scss for font-size reset.
+ * 1. To make footer stay at the bottom of the page, even when there is 
+ *    little content on the page. Footer uses margin-top.
+ *
+ * 2. site-wrapper is a flex-child of body. This ensures .site-wrapper 
+ *    always fills the entire height of the browser.
+ *
+ * 3. See _body.scss for font-size reset.
  */
 
 .site-wrapper {
-    font-size: $font-size-default; /* 1. */
+    display: flex; /* 1. */
+    flex: 1; /* 2. */
+    flex-direction: column;
 
-    @include bp-min-width($bp-desktop) {
-        padding-left: $spacing-medium;
-        padding-right: $spacing-medium;
-    }
+    font-size: $font-size-default; /* 3. */
 }

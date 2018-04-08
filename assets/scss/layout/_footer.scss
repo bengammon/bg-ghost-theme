@@ -4,12 +4,22 @@
  * -----------------------------------------------------------------------------
  */
 
+/**
+ * 1. The footer is a flex-child of .site-wrapper. This ensures the footer
+ *    is always at the bottom of the browser, even when there is little
+ *    content on the page.
+ */
+
 footer,
 .footer {
+    margin-top: auto; /* 1. */
     padding-bottom: $spacing-medium;
     padding-top: $spacing-gigantic * 2;
 
     color: $color-grey-5;
     text-align: center;
-    font-size: $font-size-small;
+
+    p {
+        font-size: $font-size-small;
+    }
 }
