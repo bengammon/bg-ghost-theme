@@ -8,7 +8,7 @@ into the {body} of the default.hbs template --}}
             {{#if @blog.logo}}
                 <img class="site-logo" src="{{@blog.logo}}" alt="{{@blog.title}}" />
             {{else}}
-                <div class="site-logo"></div>
+                {{@blog.title}}
             {{/if}}
         </a>
     </div>
@@ -19,8 +19,25 @@ into the {body} of the default.hbs template --}}
 </header>
 
 <section class="section section--intro">
-    <h1>Designer and front end dev</h1>
-    <h2>I work on cool apps and websites at <a href="https://moov2.com">Moov2</a>.</h2>
+    <div class="section__content">
+        <h1>Designer and front end dev</h1>
+        <h2>I work on cool apps and websites at <a href="https://moov2.com">Moov2</a>.</h2>
+    </div>
+
+    <div class="intro">
+        <div class="intro__shapes">
+            <div class="rectangle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="intro__lines-1">
+            <div class="line-1"></div>
+            <div class="line-2"></div>
+        </div>
+        <div class="intro__lines-2">
+            <div class="line-3"></div>
+            <div class="line-4"></div>
+        </div>
+    </div>
 </section>
 
 <section class="section">
