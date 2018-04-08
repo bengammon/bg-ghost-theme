@@ -22,10 +22,11 @@ h1 {
     margin-bottom: 1rem;
     margin-top: 0;
     
-    color: $color-grey-2;
+    color: $color-grey-7;
     font-family: $font-family-heading;
     font-size: $font-size-heading-one-mobile;
     font-weight: 700;
+    letter-spacing: -1px;
     line-height: 1.2;
 
     @include bp-min-width($bp-desktop) {
