@@ -4,7 +4,13 @@ into the {body} of the default.hbs template --}}
 
 <header>
     <div class="header__logo">
-        <a class="link link--plain" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>
+        <a class="link link--plain" href="{{@blog.url}}">
+            {{#if @blog.logo}}
+                <img class="site-logo" src="{{@blog.logo}}" alt="{{@blog.title}}" />
+            {{else}}
+                <div class="site-logo"></div>
+            {{/if}}
+        </a>
     </div>
     
     <nav class="header__nav">
@@ -24,24 +30,6 @@ into the {body} of the default.hbs template --}}
     <div class="article__body">
 
         {{content}}
-
-        {{!--
-        <section class="post-full-comments">
-            <div id="disqus_thread"></div>
-            <script>
-                var disqus_config = function () {
-                    this.page.url = '{{url absolute="true"}}';
-                    this.page.identifier = 'ghost-{{comment_id}}';
-                };
-                (function() {
-                    var d = document, s = d.createElement('script');
-                    s.src = 'https://test-apkdzgmqhj.disqus.com/embed.js';
-                    s.setAttribute('data-timestamp', +new Date());
-                    (d.head || d.body).appendChild(s);
-                })();
-            </script>
-        </section>
-        --}}
 
     </div>
 
