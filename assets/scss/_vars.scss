@@ -59,12 +59,12 @@ $color-yellow-7: #f59f00;
 $color-yellow-8: #f08c00;
 $color-yellow-9: #e67700;
 
-$font-family-default: 'Nunito', serif; /* nunito 4, vollkorn, lora 3  */
-$font-family-heading: 'Lora', sans-serif; 
+$font-family-default: 'Rubik', serif; /* nunito 4, vollkorn, lora 3  */
+$font-family-heading: 'Heebo', sans-serif; 
 $font-family-subheading: 'Nunito', Georgia, serif;
 
 $font-size-default-em: 1.6em;
-$font-size-default: 1.9rem;
+$font-size-default: 2.1rem;
 $font-size-small: 1.6rem;
 $font-size-medium: 2.2rem;
 $font-size-large: 3.2rem;
@@ -82,7 +82,7 @@ $font-size-heading-four-mobile: $font-size-small;
 
 $font-weight-light: 300;
 $font-weight-normal: 400;
-$font-weight-bold: 700;
+$font-weight-bold: 500;
 
 $letter-spacing-large: .1rem;
 
@@ -102,7 +102,7 @@ $article-margin-large: $spacing-large;
 
 $width-container: 160rem;
 $width-container-indent: 30rem;
-$width-content: 70rem;
+$width-content: 75rem;
 
 $z-index-front: 100;
 $z-index-default: 1;

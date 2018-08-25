@@ -25,8 +25,8 @@ p {
     }
 
     @include bp-min-width($bp-desktop) {
-        margin-left: $article-margin-large;
-        margin-right: $article-margin-large;
+        margin-left: 0;
+        margin-right: 0;
 
         font-size: $font-size-default;
         line-height: $line-height-paragraph;

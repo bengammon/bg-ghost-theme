@@ -25,7 +25,7 @@ section,
     padding-top: $spacing-gigantic * 2;
     width: 100%;
 
-    background: $color-grey-1;
+    background: #252a34;
 
     @include bp-min-width($bp-tablet) {
         padding-bottom: $spacing-gigantic * 3;

@@ -54,4 +54,17 @@ header,
             }
         }
     }
+
+    &__social {
+        display: flex;
+        list-style: none;
+    }
+}
+
+.header--home {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: $z-index-front;
 }

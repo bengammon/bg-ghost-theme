@@ -2,7 +2,7 @@
 {{!-- The tag above means: insert everything in this file
 into the {body} of the default.hbs template --}}
 
-<header>
+<header class="header--home">
     <div class="header__logo">
         <a class="link link--plain" href="{{@blog.url}}">
             {{#if @blog.logo}}
@@ -15,13 +15,19 @@ into the {body} of the default.hbs template --}}
     
     <nav class="header__nav">
         {{> "site-nav"}}
-    </nav>    
+    </nav>   
+
+    <ul class="header__social">
+        <li><a href="https://github.com/bengammon">Gi</a></li>
+        <li><a href="https://instagram.com/bengammon">In</a></li>
+        <li><a href="https://twitter.com/bengammon">Tw</a></li>
+    </ul> 
 </header>
 
 <section class="section section--intro">
     <div class="section__content">
-        <h1>Designer and front end dev</h1>
-        <h2>I work on cool apps and websites at <a href="https://moov2.com">Moov2</a>.</h2>
+        <h1>Designer &amp; front end dev</h1>
+        <h2>I work &amp; on cool apps and websites at <a href="https://moov2.com">Moov2</a>.</h2>
     </div>
 
     <div class="intro">
