@@ -1,0 +1,35 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $ANCHOR
+ * -----------------------------------------------------------------------------
+ */
+
+@mixin anchor-highlight() {
+    display: inline-block;
+    position: relative;
+
+    color: $color-text;
+    font-weight: 400;
+    text-decoration: none;
+
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: .1em;
+        height: .4em;
+        left: -$spacing-xs / 2;
+        right: -$spacing-xs / 2;
+        z-index: $z-index-under;
+
+        background-color: darken($color-brand-primary, 20%);
+        transition: all 200ms ease-in-out;
+    }
+
+    &:hover {
+        color: $color-text-heading;
+
+        &:before {
+            background-color: $color-brand-primary;
+        }
+    }
+}

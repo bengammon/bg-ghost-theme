@@ -1,0 +1,108 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $POST-CARD
+ * -----------------------------------------------------------------------------
+ */
+
+.post-card-wrapper {
+    display: grid;
+    grid-row-gap: $spacing-m;
+    grid-template-columns: 1fr 35rem;
+    padding-bottom: $spacing-xxl * 4;
+}
+
+.post-card {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding-top: $spacing-xs;
+
+    &:nth-child(1) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: span 6;
+        padding-right: $spacing-xxl * 2;
+        padding-top: 0;
+
+        .post-card__title {
+            margin-bottom: $spacing-s;
+
+            font-size: $font-size-huge;
+            font-weight: 400;
+            line-height: 1.2;
+        }
+
+        .post-card__meta {
+            margin-bottom: $spacing-m;
+            
+            font-size: $font-size-medium;
+        }
+
+        .post-card__excerpt {
+            display: block;
+        }
+
+        .post-card__button {
+            display: inline-block;
+        }
+    }
+}
+
+    .post-card__title {
+        display: inline-block;
+        margin-bottom: $spacing-xs;
+        margin-left: 0;
+        margin-right: 0;
+        position: relative;
+
+        font-size: $font-size-medium;
+        font-weight: 500;
+        line-height: 1.1;
+
+        a {
+            @include anchor-highlight();
+        }
+    }
+
+    .post-card__meta {
+        margin-bottom: 0;
+
+        @include font-style-meta();
+        color: $color-grey-6;
+        font-size: $font-size-small;
+
+        a {
+            color: $color-grey-6;
+            text-decoration: none;
+        }
+    }
+
+    .post-card__excerpt {
+        display: none;
+        margin-bottom: $spacing-m;
+
+        @include font-style-paragraph();
+        font-size: $font-size-medium;
+    }
+
+    .post-card__button {
+        display: none;
+        position: relative;
+
+        color: $color-grey-8;
+        font-family: $font-family-heading;
+        font-size: $font-size-medium;
+        font-weight: 500;
+        text-decoration: none;
+
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: .4rem;
+            height: 1.2rem;
+            left: -$spacing-xs;
+            right: -$spacing-xs;
+            z-index: $z-index-under;
+
+            background-color: $color-brand-primary;
+        }
+    }

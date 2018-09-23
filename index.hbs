@@ -2,57 +2,43 @@
 {{!-- The tag above means: insert everything in this file
 into the {body} of the default.hbs template --}}
 
-<header class="header--home">
-    <div class="header__logo">
-        <a class="link link--plain" href="{{@blog.url}}">
-            {{#if @blog.logo}}
-                <img class="site-logo" src="{{@blog.logo}}" alt="{{@blog.title}}" />
-            {{else}}
-                {{@blog.title}}
-            {{/if}}
-        </a>
-    </div>
-    
-    <nav class="header__nav">
-        {{> "site-nav"}}
-    </nav>   
+<header>
+    <div class="header__content">
 
-    <ul class="header__social">
-        <li><a href="https://github.com/bengammon">Gi</a></li>
-        <li><a href="https://instagram.com/bengammon">In</a></li>
-        <li><a href="https://twitter.com/bengammon">Tw</a></li>
-    </ul> 
+        <div class="header__logo">
+            <a class="link link--plain" href="{{@blog.url}}">
+                {{#if @blog.logo}}
+                    <img class="site-logo" src="{{@blog.logo}}" alt="{{@blog.title}}" />
+                {{else}}
+                    {{@blog.title}}
+                {{/if}}
+            </a>
+        </div>
+        
+        {{> "social-nav"}}
+
+    </div>
 </header>
 
 <section class="section section--intro">
     <div class="section__content">
-        <h1>Designer &amp; front end dev</h1>
-        <h2>I work &amp; on cool apps and websites at <a href="https://moov2.com">Moov2</a>.</h2>
-    </div>
 
-    <div class="intro">
-        <div class="intro__shapes">
-            <div class="rectangle"></div>
-            <div class="circle"></div>
-        </div>
-        <div class="intro__lines-1">
-            <div class="line-1"></div>
-            <div class="line-2"></div>
-        </div>
-        <div class="intro__lines-2">
-            <div class="line-3"></div>
-            <div class="line-4"></div>
-        </div>
+        <p>I work as a front end dev at <a href="https://moov2.com/">Moov2</a>, live by a <a href="https://www.thenewforest.co.uk/">forest near the sea</a>, play plenty of <a href="https://steamcommunity.com/profiles/76561198002057511/">Rocket League</a>, listen to an <a href="https://open.spotify.com/user/11148623296?si=2ZK_nXhoSn-wOa-w-s81Og">abundance of music</a> and try not to take myself too seriously.</p>
+
     </div>
 </section>
 
 <section class="section">
-    <div class="grid grid--triple">
-        {{#foreach posts}}
+    <div class="section__content">
 
-            {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
-            {{> "post-card"}}
+        <div class="post-card-wrapper">
+            {{#foreach posts}}
 
-        {{/foreach}}
+                {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+                {{> "post-card"}}
+
+            {{/foreach}}
+        </div>
+
     </div>
 </section>

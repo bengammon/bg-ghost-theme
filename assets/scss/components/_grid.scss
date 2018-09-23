@@ -8,14 +8,14 @@
     display: grid;
 
     @include bp-min-width($bp-desktop) {
-        grid-column-gap: $spacing-large;
-        grid-row-gap: $spacing-large;
+        grid-column-gap: $spacing-l;
+        grid-row-gap: $spacing-l;
         grid-template-columns: 1fr 1fr;
     }
 
     @include bp-min-width($bp-desktop-large) {
-        grid-column-gap: $spacing-huge;
-        grid-row-gap: $spacing-huge;
+        grid-column-gap: $spacing-xl;
+        grid-row-gap: $spacing-xl;
     }
 }
 

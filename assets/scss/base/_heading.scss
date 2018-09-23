@@ -5,29 +5,15 @@
  */
  
 h1,h2,h3,h4 {
-    margin-left: $article-margin;
-    margin-right: $article-margin;
     margin-top: 0;
-    
-    font-family: $font-family-heading;
-    font-weight: 700;
+    position: relative;
 
-    @include bp-min-width($bp-desktop) {
-        margin-left: $article-margin-large;
-        margin-right: $article-margin-large;
-    }
+    @include font-style-heading();
 }
 
-h1 {
-    margin-bottom: 1rem;
-    margin-top: 0;
-    
-    color: $color-grey-7;
-    font-family: $font-family-heading;
+h1 {    
     font-size: $font-size-heading-one-mobile;
-    font-weight: 700;
-    letter-spacing: -1px;
-    line-height: 1.2;
+    line-height: $line-height-heading;
 
     @include bp-min-width($bp-desktop) {
         font-size: $font-size-heading-one;
@@ -51,9 +37,11 @@ h3 {
 }
 
 h4 {
+    @include font-style-subheading();
     font-size: $font-size-heading-four-mobile;
+    font-style: italic;
 
     @include bp-min-width($bp-desktop) {
-        font-size: $font-size-heading-three;
+        font-size: $font-size-heading-four;
     }
 }

@@ -9,12 +9,12 @@ img {
     width: 100%;
     
     .article__body & {
-        padding-bottom: $spacing-small;
-        padding-top: $spacing-small;
+        padding-bottom: $spacing-s;
+        padding-top: $spacing-s;
 
         @include bp-min-width($bp-desktop) {
-            padding-bottom: $spacing-large;
-            padding-top: $spacing-large;
+            padding-bottom: $spacing-l;
+            padding-top: $spacing-l;
         }
     }
 }

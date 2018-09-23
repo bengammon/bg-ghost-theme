@@ -1,0 +1,46 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $FONT
+ * -----------------------------------------------------------------------------
+ */
+
+/**
+ * Mixins for defining media queries. These mixins should always be used
+ * to define media query breakpoints.
+ */
+
+@mixin font-style-heading() {
+    font-family: $font-family-heading;
+    font-weight: $font-weight-bold;
+}
+
+@mixin font-style-subheading() {
+    font-family: $font-family-default;
+    font-weight: $font-weight-light;
+}
+
+@mixin font-style-meta() {
+    font-family: $font-family-default;
+    font-weight: $font-weight-light;
+}
+
+@mixin font-style-paragraph() {
+    font-family: $font-family-default;
+    font-weight: $font-weight-light;
+    line-height: $line-height-paragraph-small;    
+
+    @include bp-min-width($bp-desktop) {
+        line-height: $line-height-paragraph;
+    }
+}
+
+@mixin font-style-blockquote() {
+    font-family: $font-family-default;  
+    font-style: italic;  
+    font-weight: $font-weight-light;
+    line-height: $line-height-blockquote-small;
+
+    @include bp-min-width($bp-desktop) {
+        line-height: $line-height-blockquote;
+    }
+}

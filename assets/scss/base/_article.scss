@@ -7,55 +7,56 @@
 article {
     margin-left: auto;
     margin-right: auto;
+    margin-top: $spacing-xxl;
     max-width: $width-container;
+    width: 100%;
     position: relative;
+
+    @include bp-min-width($bp-tablet) {
+        margin-top: $spacing-xxxl;
+    }
+
+    h2 {
+        margin-bottom: $spacing-xs;
+
+        & + h4 {
+            margin-top: 0;
+        }
+    }
 }
 
     .article__title { 
-        margin-bottom: $spacing-medium;
-        padding-top: $spacing-gigantic * 2;
+        margin-bottom: $spacing-s;
 
-        @include bp-min-width($bp-tablet) {
-            padding-top: $spacing-gigantic * 3;
-
-            text-align: center;
-        }
-
-        @include bp-min-width($bp-desktop) {
-            padding-top: $spacing-gigantic * 4;
-        }
+        color: $color-text-heading;
     }
 
     .article__meta {
-        margin-bottom: $spacing-gigantic * 2;
+        margin-bottom: $spacing-xxxl;
 
-        color: $color-grey-5;
-        font-family: $font-family-subheading;
-        font-size: $font-size-heading-four;
-        font-style: italic;
+        color: $color-text-meta;
+        @include font-style-meta();
+        font-size: $font-size-default;
 
         @include bp-min-width($bp-tablet) {
-            margin-bottom: $spacing-gigantic * 3;
-
-            text-align: center;
-        }
-
-        @include bp-min-width($bp-desktop) {
-            margin-bottom: $spacing-gigantic * 4;
+            margin-bottom: $spacing-xxxl;
         }
 
         a {
-            color: $color-grey-5;
+            color: $color-grey-6;
         }
     }
 
     .article__body {
-        margin-bottom: $spacing-gigantic * 2;
-        margin-left: auto;
+        margin-bottom: $spacing-xxxl;
         margin-right: auto;
         max-width: $width-content;
 
         @include bp-min-width($bp-desktop) {
-            margin-bottom: $spacing-gigantic * 3;
+            margin-bottom: $spacing-xxxl;
+        }
+
+        h4 {
+            color: $color-text-subheading;
         }
     }

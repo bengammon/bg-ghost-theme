@@ -1,0 +1,30 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $LIST
+ * -----------------------------------------------------------------------------
+ */
+
+.list--social {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    font-size: $font-size-small;
+
+    @include bp-min-width($bp-desktop) {
+        font-size: $font-size-default;
+    }
+
+    li {
+        margin-left: $spacing-m;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+
+    a {
+        @include anchor-highlight();
+    }
+}

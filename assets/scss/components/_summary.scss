@@ -5,13 +5,13 @@
  */
  
 .summary {
-    padding-bottom: $spacing-medium;
-    padding-top: $spacing-medium;
+    padding-bottom: $spacing-m;
+    padding-top: $spacing-m;
     
     border-top: 1px solid $color-grey-7;
 
     @include bp-min-width($bp-tablet) {
-        padding: $spacing-large $spacing-medium;
+        padding: $spacing-l $spacing-m;
 
         border-right: 1px solid $color-grey-7;
 
@@ -21,10 +21,10 @@
     }
 
     @include bp-min-width($bp-desktop) {
-        padding-bottom: $spacing-large;
-        padding-left: $spacing-tiny;
-        padding-right: $spacing-tiny;
-        padding-top: $spacing-large;
+        padding-bottom: $spacing-l;
+        padding-left: $spacing-xs;
+        padding-right: $spacing-xs;
+        padding-top: $spacing-l;
 
         border: 1px solid $color-grey-7;
     }
@@ -34,13 +34,13 @@
     }
     
     &__title {
-        margin-bottom: $spacing-tiny;
+        margin-bottom: $spacing-xs;
         
         color: $color-grey-4;
         font-size: $font-size-heading-three;
 
         @include bp-min-width($bp-desktop) {
-            margin-bottom: $spacing-tiny * 3;
+            margin-bottom: $spacing-xs * 3;
 
             font-size: $font-size-heading-two;
         }
@@ -56,7 +56,7 @@
     }
     
     &__meta {
-        margin-bottom: $spacing-medium;
+        margin-bottom: $spacing-m;
 
         color: $color-grey-5;
         font-family: $font-family-subheading;

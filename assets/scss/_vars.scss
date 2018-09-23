@@ -10,10 +10,16 @@ $bp-tablet: 768px;
 $bp-desktop: 1024px;
 $bp-desktop-large: 1440px;
 
-$color-black: #000;
-$color-grey-dark: #212121;
-$color-text: #2b2a28;
-$color-white: #fff;
+$color-blue-0: #e7f5ff;
+$color-blue-1: #d0ebff;
+$color-blue-2: #a5d8ff;
+$color-blue-3: #74c0fc;
+$color-blue-4: #4dabf7;
+$color-blue-5: #339af0;
+$color-blue-6: #228be6;
+$color-blue-7: #1c7ed6;
+$color-blue-8: #1971c2;
+$color-blue-9: #1864ab;
 
 $color-grey-0: #f8f9fa;
 $color-grey-1: #f1f3f5;
@@ -48,6 +54,17 @@ $color-lime-7: #74b816;
 $color-lime-8: #66a80f;
 $color-lime-9: #5c940d;
 
+$color-red-0: #fff5f5;
+$color-red-1: #ffe3e3;
+$color-red-2: #ffc9c9;
+$color-red-3: #ffa8a8;
+$color-red-4: #ff8787;
+$color-red-5: #ff6b6b;
+$color-red-6: #fa5252;
+$color-red-7: #f03e3e;
+$color-red-8: #e03131;
+$color-red-9: #c92a2a;
+
 $color-yellow-0: #fff9db;
 $color-yellow-1: #fff3bf;
 $color-yellow-2: #ffec99;
@@ -59,21 +76,34 @@ $color-yellow-7: #f59f00;
 $color-yellow-8: #f08c00;
 $color-yellow-9: #e67700;
 
-$font-family-default: 'Rubik', serif; /* nunito 4, vollkorn, lora 3  */
-$font-family-heading: 'Heebo', sans-serif; 
-$font-family-subheading: 'Nunito', Georgia, serif;
+$color-black: #000;
+$color-grey-dark: #212121;
+$color-white: #fff;
+
+$color-brand-primary: #44288e;
+$color-site-background: #07050c;
+$color-text: #b9b6bf;
+$color-text-heading: #dfdde4;
+$color-text-subheading: #8677ab;
+$color-text-meta: #8677ab;
+$color-text-blockquote: #8677ab;
+
+$font-family-default: 'Source Sans Pro', sans-serif;
+$font-family-heading: 'Mada', sans-serif; 
+$font-family-subheading: 'Source Sans Pro', sans-serif;
 
 $font-size-default-em: 1.6em;
 $font-size-default: 2.1rem;
-$font-size-small: 1.6rem;
-$font-size-medium: 2.2rem;
+$font-size-tiny: 1.6rem;
+$font-size-small: 1.8rem;
+$font-size-medium: 2.5rem;
 $font-size-large: 3.2rem;
-$font-size-huge: 4.4rem;
-$font-size-gigantic: 8rem;
+$font-size-huge: 4rem;
+$font-size-gigantic: 5.7rem;
 
 $font-size-heading-one: $font-size-gigantic;
 $font-size-heading-one-mobile: $font-size-large;
-$font-size-heading-two: $font-size-large;
+$font-size-heading-two: $font-size-huge;
 $font-size-heading-two-mobile: $font-size-medium;
 $font-size-heading-three: $font-size-medium;
 $font-size-heading-three-mobile: $font-size-default;
@@ -87,20 +117,23 @@ $font-weight-bold: 500;
 $letter-spacing-large: .1rem;
 
 $line-height-blockquote: 1.4;
-$line-height-paragraph: 1.6;
-$line-height-paragraph-small: 1.4;
+$line-height-blockquote-small: 1.4;
+$line-height-heading: 1.4;
+$line-height-paragraph: 1.4;
+$line-height-paragraph-small: 1.3;
 
-$spacing-tiny: .5rem;
-$spacing-small: 1rem;
-$spacing-medium: 2rem;
-$spacing-large: 3rem;
-$spacing-huge: 4rem;
-$spacing-gigantic: 5rem;
+$spacing-xs: .5rem;
+$spacing-s: 1rem;
+$spacing-m: 1.5rem;
+$spacing-l: 2.5rem;
+$spacing-xl: 4rem;
+$spacing-xxl: 6.5rem;
+$spacing-xxxl: 10.5rem;
 
-$article-margin: $spacing-small;
-$article-margin-large: $spacing-large;
+$article-margin: $spacing-s;
+$article-margin-large: $spacing-l;
 
-$width-container: 160rem;
+$width-container: 100rem;
 $width-container-indent: 30rem;
 $width-content: 75rem;
 

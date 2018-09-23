@@ -26,8 +26,16 @@
         {{{body}}}
 
         {{!-- The footer at the very bottom of the screen --}}
-        <footer>
-            <p>{{@blog.title}} &copy; {{date format="YYYY"}}. Built with <a class="link link--plain" href="https://ghost.org" target="_blank">Ghost</a>.</p>
+        <footer class="footer">
+            <div class="footer__content">
+
+                <p><a class="link link--plain" href="{{@blog.url}}">{{@blog.title}}</a>. Site built with <a class="link link--plain" href="https://ghost.org" target="_blank">Ghost</a> and a custom theme.</p>
+                
+                <ul class="list--social">
+                    {{> "social-nav"}}
+                </ul>
+
+            </div>
         </footer>
 
     </div>
