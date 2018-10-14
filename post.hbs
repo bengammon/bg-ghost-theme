@@ -39,8 +39,10 @@ into the {body} of the default.hbs template --}}
 
 {{!-- Links to Previous/Next posts --}}
 <aside class="read-next outer">
+
     <h4 class="text--sub-title">Further reading</h4>
-    <div class="grid grid--double">
+    
+    <div class="post-card-wrapper post-card-wrapper--read-next">
 
         {{!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs --}}
         {{#next_post}}
