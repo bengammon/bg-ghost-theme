@@ -6,15 +6,12 @@
  
 a,
 .link { 
-    color: $color-brand-primary;
-
-    &:hover {
-        text-decoration: none;
-    }
+    @include anchor-underline();
 }
 
 .link--plain {
     border: 0;
+    text-decoration: none;
 
     &:hover {
         border: 0;
