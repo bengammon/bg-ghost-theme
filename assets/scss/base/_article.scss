@@ -5,15 +5,26 @@
  */
  
 article {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: $margin-mobile;
+    margin-right: $margin-mobile;
     margin-top: $spacing-xxl;
-    max-width: $width-container;
-    width: 100%;
+    max-width: $width-container-mobile;
     position: relative;
 
     @include bp-min-width($bp-tablet) {
+        margin-left: $margin-tablet;
+        margin-right: $margin-tablet;
         margin-top: $spacing-xxxl;
+    }
+
+    @include bp-min-width($bp-desktop) {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    @include bp-min-width($bp-desktop-m) {
+        max-width: $width-container;
     }
 
     h2 {
@@ -43,7 +54,7 @@ article {
         }
 
         a {
-            color: $color-grey-6;
+            color: $color-text-meta;
         }
     }
 
@@ -52,11 +63,17 @@ article {
         margin-right: auto;
         max-width: $width-content;
 
+        font-size: $font-size-small;
+
         @include bp-min-width($bp-desktop) {
             margin-bottom: $spacing-xxxl;
         }
 
         h4 {
             color: $color-text-subheading;
+        }
+
+        a {
+            font-weight: $font-weight-bold;
         }
     }
