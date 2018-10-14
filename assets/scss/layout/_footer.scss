@@ -16,27 +16,42 @@ footer,
 }
 
     .footer__content {
+        align-items: baseline;
         display: flex;
+        flex-flow: row wrap;
         justify-content: space-between;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: $width-container;
-        padding-bottom: $spacing-xl;
+        margin-bottom: $margin-mobile;
+        margin-left: $margin-mobile;
+        margin-right: $margin-mobile;
+        max-width: $width-container-mobile;
     
         font-family: $font-family-heading;
-        text-align: center;
+        font-size: $font-size-small;
+
+        @include bp-min-width($bp-tablet) {
+            margin-bottom: $margin-tablet * .9;
+            margin-left: $margin-tablet;
+            margin-right: $margin-tablet;
+        }
+
+        @include bp-min-width($bp-desktop) {
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: $spacing-m;
+
+            font-size: $font-size-default;
+        }
+
+        @include bp-min-width($bp-desktop-m) {
+            max-width: $width-container;
+        }
 
         p {
             margin-bottom: 0;
+            padding-top: $spacing-xs;
+            width: 100%;
 
-            font-size: $font-size-small;
-
-            @include bp-min-width($bp-desktop) {
-                font-size: $font-size-default;
-            }
-        }
-
-        a {
-            @include anchor-highlight();
+            color: $color-text-subheading;
+            font-style: italic;
         }
     }
