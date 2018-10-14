@@ -29,11 +29,11 @@
         <footer class="footer">
             <div class="footer__content">
 
-                <p><a class="link link--plain" href="{{@blog.url}}">{{@blog.title}}</a>. Site built with <a class="link link--plain" href="https://ghost.org" target="_blank">Ghost</a> and a custom theme.</p>
-                
-                <ul class="list--social">
-                    {{> "social-nav"}}
-                </ul>
+                <a class="link link--plain" href="{{@blog.url}}">{{@blog.title}}</a>
+
+                {{> "social-nav"}}
+
+                <p>Published with <a href="https://ghost.org" target="_blank">Ghost</a>.</p>
 
             </div>
         </footer>
