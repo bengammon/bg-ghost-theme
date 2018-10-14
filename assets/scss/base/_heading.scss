@@ -9,13 +9,14 @@ h1,h2,h3,h4 {
     position: relative;
 
     @include font-style-heading();
+    color: $color-text-heading;
 }
 
 h1 {    
     font-size: $font-size-heading-one-mobile;
     line-height: $line-height-heading;
 
-    @include bp-min-width($bp-desktop) {
+    @include bp-min-width($bp-tablet) {
         font-size: $font-size-heading-one;
     }
 }
