@@ -11,5 +11,5 @@ hr {
     padding-top: $spacing-m;
     
     border: 0;
-    border-bottom: 1px solid $color-grey-8;
+    border-bottom: 1px solid lighten($color-site-background, 5%);
 }
