@@ -25,7 +25,7 @@ blockquote {
         }
 
         & + h2 {
-            margin-top: $spacing-s;
+            margin-top: $spacing-xl;
     
             @include bp-min-width($bp-desktop) {
                 margin-top: $spacing-xxl;
@@ -34,7 +34,7 @@ blockquote {
 
         & + h3,
         & + h4 { 
-        margin-top: $spacing-s;
+        margin-top: $spacing-l;
 
         @include bp-min-width($bp-desktop) {
             margin-top: $spacing-xl;
