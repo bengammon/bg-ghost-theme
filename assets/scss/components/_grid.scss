@@ -13,7 +13,7 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    @include bp-min-width($bp-desktop-large) {
+    @include bp-min-width($bp-desktop-m) {
         grid-column-gap: $spacing-xl;
         grid-row-gap: $spacing-xl;
     }
