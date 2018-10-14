@@ -8,12 +8,12 @@
     padding-bottom: $spacing-m;
     padding-top: $spacing-m;
     
-    border-top: 1px solid $color-grey-7;
+    border-top: 1px solid lighten($color-site-background, 5%);
 
     @include bp-min-width($bp-tablet) {
         padding: $spacing-l $spacing-m;
 
-        border-right: 1px solid $color-grey-7;
+        border-right: 1px solid lighten($color-site-background, 5%);
 
         &:nth-child(even) {
             border-right: 0;
@@ -26,7 +26,7 @@
         padding-right: $spacing-xs;
         padding-top: $spacing-l;
 
-        border: 1px solid $color-grey-7;
+        border: 1px solid lighten($color-site-background, 5%);
     }
     
     &:hover {
@@ -36,7 +36,7 @@
     &__title {
         margin-bottom: $spacing-xs;
         
-        color: $color-grey-4;
+        color: $color-text;
         font-size: $font-size-heading-three;
 
         @include bp-min-width($bp-desktop) {
@@ -47,10 +47,10 @@
 
         a { 
             border: 0;
-            color: $color-grey-4;
+            color: $color-text;
 
             &:hover {
-                color: $color-grey-2;
+                color: $color-text;
             }
         }
     }
@@ -58,13 +58,13 @@
     &__meta {
         margin-bottom: $spacing-m;
 
-        color: $color-grey-5;
+        color: $color-text;
         font-family: $font-family-subheading;
         font-size: $font-size-small;
         font-style: italic;
 
         a {
-            color: $color-grey-5;
+            color: $color-text;
         }
     }
     
