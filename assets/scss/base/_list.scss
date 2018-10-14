@@ -7,20 +7,18 @@
 ol,
 ul {
     margin-bottom: $spacing-m;
-    margin-left: $article-margin;
-    margin-right: $article-margin;
+    margin-left: $spacing-m;
+    margin-right: $spacing-m;
     padding-left: $spacing-l;
     
+    @include font-style-paragraph();
     font-size: $font-size-small;
-    line-height: $line-height-paragraph-small;
 
     @include bp-min-width($bp-desktop) {
         margin-left: 0;
-        padding-left: $spacing-xxl * 2;
+        padding-left: $spacing-xxl;
 
-        font-size: $font-size-medium;
-        font-weight: $font-weight-light;
-        line-height: $line-height-paragraph;
+        font-size: $font-size-default;
     }
 
     & + h2, 
