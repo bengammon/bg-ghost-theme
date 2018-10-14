@@ -8,7 +8,7 @@
     margin-bottom: 1rem;
     margin-top: 0;
     
-    color: $color-grey-2;
+    color: $color-text-heading;
     font-family: $font-family-heading;
     font-size: $font-size-heading-one;
     font-weight: $font-weight-bold;
@@ -16,9 +16,9 @@
 }
 
 .text--sub-title {
-    color: $color-grey-6;
-    letter-spacing: $letter-spacing-large;
+    color: $color-text-subheading;
     font-size: $font-size-small;
-    font-weight: $font-weight-normal;
+    font-style: normal;
+    letter-spacing: $letter-spacing-large;
     text-transform: uppercase;
 }
