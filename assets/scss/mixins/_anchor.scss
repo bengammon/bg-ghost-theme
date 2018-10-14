@@ -33,3 +33,12 @@
         }
     }
 }
+
+@mixin anchor-underline() {
+    color: $color-text-heading;
+    text-decoration-color: $color-brand-primary;
+
+    &:hover {
+        text-decoration-color: #6c40de;
+    }
+}
